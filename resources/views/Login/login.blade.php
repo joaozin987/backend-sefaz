@@ -9,47 +9,30 @@
     <link href="./dist/output.css" rel="stylesheet">
     <title>Document</title>
 </head>
-<body>
-    
-    <header class="w-auto bg-orange-400 h-[80px] shadow-lg rounded-md"> 
-        <div class="w-full  flex jusitify-between">
-        <h1 class="text-white cursor-pointer  text-3xl mt-5 ml-32 text-left  font-serif mr-52" href="{{route('Home')}}">Maceió IN</h1>
-   
-        <ul class=" mt-6 flex  space-x-12 justify-center">
-            <li class="cursor-pointer font-extrabold text-white text-xl hover:text-gray-700">
-                <a href="">Sobre</a>
-            </li>
-            <li class="cursor-pointer font-extrabold text-white text-xl hover:text-gray-700">
-                <a href="">Noticias</a>
-            </li>
-            <li class="text-white font-extrabold text-xl hover:text-gray-700">
-                <a href="">Contato</a>
-            </li>
-            <li class="text-white font-extrabold text-xl hover:text-gray-700">
-                <a href="">Serviços</a>
-            </li>
-        </ul>
-        </div>
+<body class="bg-orange-400">
+    <div class="bg-orange-600 w-96 h-96 mx-auto mt-52 rounded-xl">
+     
+        <h1 class="font-serif text-2xl text-center pt-5 text-white">Login</h1>
 
-    </div>
-</header>
-    <div class="text-center text-blue-700">
-        <h1 class="font-bold mt-4 text-2xl">Gerenciando o Futuro Fiscal de Maceió</h1>
-        <p class="text-xl font-light ">Compromisso com a Transparência e Eficiência na Administração Fiscal de Maceió</p>
-    </div>
-    <div class=" flex  w-1/1  gap-4  overflow-hidden">
-        <img  class="h-72 ml-6 w-auto mt-10 rounded-md  hover:scale-95 duration-200 "   src="assets/img/aZLnRIOQ.jpeg" alt="">
-        <img  class="h-72 ml-6 w-auto mt-10 rounded-md  hover:scale-95 duration-200"   src="assets/img/OLZDgMlo.jpeg" alt="">
-        <img class="h-72 ml-6 w-auto mt-10 rounded-md  hover:scale-95 duration-200" src="assets/img/2JoZrKsS.jpeg" alt="">
-    </div>
-    <div class="rounded-2xl h-auto w-auto">
-        <p class="text-sm ml-7 mr-7 text-blue-800  mt-10 font-semibold text-justify">A Secretaria de Fazenda de Maceió não é só números e arrecadação é sobre transformar recursos em benefícios reais para a população. Na imagem,  moradores seguros com orgulho das chaves de sua nova casa, resultado de investimentos bem aplicados. Isso representa muito mais do que um simples imóvel; é segurança, dignidade e um novo começo. Esse é o compromisso de gestão fiscal eficiente e garantir que cada centavo arrecadado volte para a cidade em forma de melhorias concretas para quem mais precisa
-            Através de uma administração transparente e responsável, projetos como esse se tornam realidade, proporcionando moradia acessível para centenas de famílias. O trabalho da Secretaria envolve desde a arrecadação até a destinação correta dos recursos, sempre com foco no bem-estar dos cidadãos. 
+        <div class="mt-10">
+        <label  class="text-white text-xl ml-6 font-serif mt-10" for="">Usuario</label>
+        <input  class="p-2 mt-2 items-center ml-6 w-80 rounded-lg" type="text" placeholder=" Digite seu Usuario"text>
     </div>
 
-        <div class="bg-blue-800 h-20 mt-11 rounded-md shadow-xl"  >
-            <h1 class="text-2xl pt-5 text-white font-serif text-center ">Sistema para gerenciar os cadastros da Secretaria de Fazenda de Maceió.</h1>
+        <div class="mt-6">
+        <label class="text-xl text-white ml-6 font-serif" for="senha">Senha</label>
+        <input class="p-2 mt-2  ml-6 rounded-lg w-80" type="text" placeholder="Digite sua Senha">
         </div>
-    </header>
+
+        <div class="text-right mr-8 grid">
+        <a class="text-white text-sm font-thin mt-1 grid" href="{{route('Cadastro')}}">não tem uma conta?</a>
+        <a class="text-white text-sm font-thin grid" href="{{route('Cadastro')}}">clique aqui para criar</a>
+        </div>
+
+        <div class="flex justify-center mt-4">
+            <a class="bg-white p-2  font-normal rounded-xl text-orange-600 hover:bg-yellow-100" href="{{route('Home')}}">Continuar</a>
+        </div>
+    </div>
+
 </body>
 </html>
