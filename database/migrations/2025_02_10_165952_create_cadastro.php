@@ -11,11 +11,17 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('Cadastro de Funcionários da Secretaria', function (Blueprint $table) {
+        Schema::create('Cadastro', function (Blueprint $table) {
             $table->string('nome');
-            $table->string('setor');
             $table->string('email')->unique();
+            $table->string('senha');
         });
+
+        Schema::create('Login', function (Blueprint $table) {
+            $table->string('email')->unique();
+            $table->string('senha');
+        });
+
     }
 
     /**
