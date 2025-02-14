@@ -12,15 +12,10 @@
     <title>Document</title>
 </head>
 <body class="bg-orange-400">
-      
-    @if(session('sucess'))
-    <div class="alert alert-success">
-        {{ session('sucess') }}
-    </div>
-@endif
+   
 
 
-    <form action="{{ route('conta.store') }}" method="GET">
+    <form action="{{ route('conta.index') }}" method="GET">
         @csrf
         
         <div class="bg-orange-600 w-96 h-96 mx-auto mt-52 rounded-xl">
@@ -28,12 +23,12 @@
     
             <div class="mt-10">
                 <label class="text-white text-xl ml-6 font-serif mt-10" for="">E-mail</label>
-                <input class="p-2 mt-2 items-center ml-6 w-80 rounded-lg" type="text" name="email" placeholder="Digite seu E-mail">
+                <input class="p-2 mt-2 items-center ml-6 w-80 rounded-lg" type="text" name="email" placeholder="Digite seu E-mail" required>
             </div>
          
             <div class="mt-6">
                 <label class="text-xl text-white ml-6 font-serif" for="senha">Senha</label>
-                <input class="p-2 mt-2 ml-6 rounded-lg w-80" type="text" name="password" placeholder="Digite sua Senha">
+                <input class="p-2 mt-2 ml-6 rounded-lg w-80" type="text" name="password" placeholder="Digite sua Senha" required>
             </div>
     
             <div class="flex justify-center mt-4">

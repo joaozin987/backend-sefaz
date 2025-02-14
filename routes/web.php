@@ -4,12 +4,13 @@ use App\Http\Controllers\ContaController;
 use Illuminate\Support\Facades\Route;
     
 Route::get('/' , function(){
-    return view('welcome');
-});
+    return view('/create-conta');
+})->name('conta.create');
 
-Route::get('/index-conta' , [ContaController::class, 'index'])->name('conta.index');
 
 Route::get('/create-conta' , [ContaController::class, 'create'])->name('conta.create');
+
+Route::get('/index-conta' , [ContaController::class, 'index'])->name('conta.index');
 
 Route::post('/store-conta' , [ContaController::class, 'store'])->name('conta.store');
 
@@ -21,6 +22,7 @@ Route::put('/update-conta' , [ContaController::class, 'update'])->name('conta.up
 
 Route::delete('/destroy-conta' , [ContaController::class, 'destroy'])->name('conta.destroy');
 
+Route::get('/contas', [ContaController::class, 'index']);
 
 
 

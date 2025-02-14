@@ -10,6 +10,6 @@ class Conta extends Model
     use HasFactory;
 
     protected $table = 'contas_';
-    //
-    protected $fillable = ['nome', 'email', 'senha'];
+    
+    protected $fillable = ['nome', 'email', 'senha', 'setor'];
 }
