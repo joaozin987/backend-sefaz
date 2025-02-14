@@ -34,7 +34,7 @@ class ContaController extends Controller
 
     public function edit()
     {   
-        $contas = Conta::whereNotNull('setor')->get();
+        $contas = Conta::whereNotNull('setor' )->get();
         return view('contas.edit', compact('contas'));
     }
 

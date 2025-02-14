@@ -14,7 +14,7 @@
     
 
 
-    <table class=" bg-green-500 mr-20 rounded-lg max-auto w-full ml-0 h-64 table-auto">
+    <table class=" bg-green-500 mr-20 rounded-lg max-auto w-full ml-0 h-32 table-auto">
         <thead>
             <h1 class="font-serif text-2xl  mt-4 ml-10 mb-3">Lista de Funcionarios</h1>
             <tr class="">

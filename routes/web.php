@@ -2,11 +2,10 @@
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ContaController;
 use Illuminate\Support\Facades\Route;
-    
-Route::get('/' , function(){
-    return view('/create-conta');
-})->name('conta.create');
-
+ 
+Route::get('/', function () {
+    return view('contas.create');
+});
 
 Route::get('/create-conta' , [ContaController::class, 'create'])->name('conta.create');
 
