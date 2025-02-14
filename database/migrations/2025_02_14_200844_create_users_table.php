@@ -11,18 +11,20 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('Cadastro de Funcionários da Secretaria', function (Blueprint $table) {
+        Schema::create('contas_', function (Blueprint $table) {
+            $table->id();
             $table->string('nome');
-            $table->string('setor');
-            $table->string('email')->unique();
+            $table->float('email')->unique();
+            $table->date('senha');
+            $table->timestamps();
         });
     }
 
     /**
      * Reverse the migrations.
      */
-    public function down(): void
-    {
-        Schema::dropIfExists('cadastro');
-    }
-};
+   
+public function down()
+{
+    Schema::dropIfExists('contas');
+}
