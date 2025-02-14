@@ -1,23 +1,35 @@
 <?php
-
-use App\Http\Controllers\Auth\LoginController;
-use App\Http\Controllers\CadastroController;
-use App\Http\Controllers\HomeController;
-use Illuminate\Auth\Events\Login;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\ContaController;
 use Illuminate\Support\Facades\Route;
-
-Route::get('/', function () {
-    return view('Login.login');
+    
+Route::get('/' , function(){
+    return view('welcome');
 });
 
-Route::get('/Login', [LoginController::class, 'aceppt'])->name('Login');
-Route::post('/Login', [LoginController::class, 'loginAttempt'])->name('auth');
+Route::get('/index-conta' , [ContaController::class, 'index'])->name('conta.index');
 
-Route::get('/Cadastro', [CadastroController::class, 'index'])->name('Cadastro');
-Route::post('/Cadastro', [CadastroController::class, 'cadastroAttempt'])->name('auth');
+Route::get('/create-conta' , [ContaController::class, 'create'])->name('conta.create');
 
-Route::middleware(['auth'])->group(function(){
-    Route::get('/Home', function(){
-        return view('Home');
-    })->name('Home');
-});
+Route::post('/store-conta' , [ContaController::class, 'store'])->name('conta.store');
+
+Route::get('/show-conta', [ContaController::class, 'show'])->name('conta.show');
+
+Route::get('/edit-conta' , [ContaController::class, 'edit'])->name('conta.edit');
+
+Route::put('/update-conta' , [ContaController::class, 'update'])->name('conta.update');
+
+Route::delete('/destroy-conta' , [ContaController::class, 'destroy'])->name('conta.destroy');
+
+
+
+
+
+
+
+
+
+
+
+
+?>

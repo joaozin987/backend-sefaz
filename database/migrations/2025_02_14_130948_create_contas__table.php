@@ -11,17 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('Cadastro', function (Blueprint $table) {
+        Schema::create('contas_', function (Blueprint $table) {
+            $table->id();
             $table->string('nome');
-            $table->string('email')->unique();
-            $table->string('senha');
+            $table->float('email')->unique();
+            $table->date('senha');
+            $table->timestamps();
         });
-
-        Schema::create('Login', function (Blueprint $table) {
-            $table->string('email')->unique();
-            $table->string('senha');
-        });
-
     }
 
     /**
@@ -29,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('cadastro');
+        Schema::dropIfExists('contas_');
     }
 };

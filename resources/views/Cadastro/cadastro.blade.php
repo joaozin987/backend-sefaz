@@ -10,8 +10,11 @@
     <title>Document</title>
 </head>
 <body class="bg-orange-400">
-    
-    <form>    
+        @if (session('success'))
+        <p style="color: green;">{{ session('success') }}</p>
+        @endif
+
+    <form action="{{route('.')}}" method="POST">    
         @csrf
     <div class="bg-orange-600 w-96 h-96 mx-auto mt-52 rounded-xl">
      
@@ -33,7 +36,7 @@
             </div>
 
         <div class="flex justify-center mt-5">
-            <a class="bg-white p-2  font-normal rounded-xl text-orange-600 hover:bg-yellow-100 "  href="{{route('Login')}}">Continuar</a>
+            <button class="bg-white p-2  font-normal rounded-xl text-orange-600 hover:bg-yellow-100 cursor-pointer" >Continuar</button>
         </div>
     </div>
 </form>
