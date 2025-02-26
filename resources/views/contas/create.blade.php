@@ -17,7 +17,7 @@
         <form action="{{route('conta.store')}}" method="POST">    
         @csrf
         
-        <div class="bg-orange-600 w-96 h-96 mx-auto mt-52 rounded-xl">
+        <div class="bg-orange-600 w-96 h-96 mx-auto mt-40 rounded-xl">
  
         <h1 class="font-serif text-2xl text-center pt-3 text-white">Crie sua Conta</h1>
       

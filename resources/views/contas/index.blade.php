@@ -42,9 +42,9 @@
 
    
     <div class="flex w-full gap-4 overflow-hidden">
-        <img class="h-72 ml-14 w-auto mt-10 rounded-md hover:scale-95 duration-200" src="{{ asset('assets/img/aZLnRIOQ.jpeg') }}" alt="Imagem 1">
-        <img class="h-72 ml-6 w-auto mt-10 rounded-md hover:scale-95 duration-200" src="{{ asset('assets/img/OLZDgMlo.jpeg') }}" alt="Imagem 2">
-        <img class="h-72 ml-10 w-auto mt-10 rounded-md hover:scale-95 duration-200" src="{{ asset('assets/img/2JoZrKsS.jpeg') }}" alt="Imagem 3">
+        <img class="h-72 ml-4 w-auto mt-10 rounded-md hover:scale-95 duration-200" src="{{ asset('assets/img/aZLnRIOQ.jpeg') }}" alt="Imagem 1">
+        <img class="h-72 ml-2 w-auto mt-10 rounded-md hover:scale-95 duration-200" src="{{ asset('assets/img/OLZDgMlo.jpeg') }}" alt="Imagem 2">
+        <img class="h-72 ml-3 w-auto mt-10 rounded-md hover:scale-95 duration-200" src="{{ asset('assets/img/2JoZrKsS.jpeg') }}" alt="Imagem 3">
     </div>
 
   
@@ -65,7 +65,7 @@
 
    
     <div class="flex w-full gap-8 overflow-hidden">
-        <img class="h-72 ml-6 w-auto mt-10 rounded-md hover:scale-95 duration-200" src="{{ asset('assets/img/UMIQyFg.jpeg') }}" alt="Imagem Parque">
+        <img class="h-72 ml-4 w-auto mt-10 rounded-md hover:scale-95 duration-200" src="{{ asset('assets/img/UMIQyFg.jpeg') }}" alt="Imagem Parque">
         <p class="text-xl-center ml-7 mr-7 text-orange-600 mt-10 font-semibold text-justify shadow-sm">O Parque Linear Freitas Neto representa um avanço significativo na infraestrutura urbana de Maceió, trazendo consigo uma nova perspectiva para a qualidade de vida dos moradores da parte alta da cidade. Antes uma área pouco aproveitada, agora se transforma em um espaço vivo e dinâmico, onde crianças, jovens, adultos e idosos podem desfrutar de atividades ao ar livre com segurança e conforto.
 
             A criação desse parque reflete uma gestão comprometida com o desenvolvimento sustentável e a inclusão social. A requalificação urbana da região não apenas oferece um local adequado para a prática de esportes e lazer, mas também promove o fortalecimento da comunidade ao incentivar o convívio social em um ambiente bem planejado.
