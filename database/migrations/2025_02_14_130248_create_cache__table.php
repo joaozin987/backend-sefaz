@@ -11,10 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('Cadastro de Funcionários da Secretaria', function (Blueprint $table) {
-            $table->string('nome');
-            $table->string('setor');
-            $table->string('email')->unique();
+        Schema::create('c', function (Blueprint $table) {
+            $table->id();
+            $table->timestamps();
         });
     }
 
@@ -23,6 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('cadastro');
+        Schema::dropIfExists('cache_');
     }
 };
